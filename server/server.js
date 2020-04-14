@@ -22,7 +22,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-app.user(express.static('client/build'));
+app.use(express.static('client/build'));
 
 
 //// GET ////
